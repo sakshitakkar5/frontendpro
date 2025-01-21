@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+
+
+            border: 10px solid black;
+            display: flex;
+            /*left right positioning*/
+            /* justify-content:center; */
+            min-height: 400px;
+            /*top bottom positioning*/
+            /* align-items: center; */
+            /* flex-direction: row-reverse; */
+            gap: 10px;
+            /* flex-wrap: wrap;  */
+            /* float elements to the next line */
+            /* align-content: center; */
+
+        }
+
+        .box{
+            /* flex-shrink-1 is a default value which will enable the shrink */
+            flex-shrink: 1;
+            /* min-width: 200px; */
+            display: flex;
+             
+            background-color: yellow;
+            width: 100px;
+            height: 100px;
+
+            /* By default value of flex-grow is 1 in which element tries to fill the empty space of parent element */
+            /* flex-grow: 1; */
+            /* max-width: 400px; */
+
+        }
+        #box1{
+            /* flex-shrink: 5; */
+            /* flex-grow: 5; */
+        }
+
+        @media(max-width: 275px) {
+
+            body{
+                flex-wrap: wrap;
+            }
+            
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box" id="box1">1</div>
+        <div class="box">2</div>
+        <div class="box">3</div>
+        <div class="box">4</div>
+        <div class="box">2</div>
+        <div class="box">3</div>
+        <div class="box">4</div>
+        
+      
+        
+        
+    </div>
+</body>
+</html>

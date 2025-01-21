@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title> CSS flex Property </title>
+    <style>
+        .container {
+  display: flex; /* Enable Flexbox */
+  justify-content: space-between; /* Distribute items horizontally */
+  align-items: center; /* Align items vertically */
+  height: 200px; /* Set container height */
+  border: 2px solid #333; /* Visual border for the container */
+}
+
+.item {
+  background-color: #4caf50;
+  color: white;
+  padding: 20px;
+  flex: 2 2 50px; /* All items will grow equally to fill space */
+  margin: 5px; /* Adds spacing between items */
+  text-align: center;
+}
+
+
+
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="item" id="item1">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+      </div>
+      
+</body>
+
+</html>

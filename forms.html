@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            color: green;
+        }
+        .box p{
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <form action="" method="post">
+        <label for="uname">Enter Name:</label>
+        <input type="text" name="uname" id="uname" maxlength="4" size="60" placeholder="Enter name" required>
+        <br>
+        <label for="pass">Enter Password:</label>
+        <input type="password" name="pass" id="pass">
+        <br>
+        <label for="email">Enter Email:</label>
+        <input type="email" name="email" id="email">
+        <br>
+        <label for="comment">Review:</label>
+        <textarea name="comment" id="comment" rows="5" cols="30">Enter Comment</textarea>
+        <br>
+
+        <label for="hobby">Select Hobby:</label>
+        <input type="checkbox" name="hobby" id="hobby" value="sing">Singing
+        <input type="checkbox" name="hobby" id="hobby" value="dance">Dancing
+
+        <br>
+
+        <label for="course">Choose Course:</label>
+        <input type="radio" name="course" id="btech">
+        <label for="btech">B.Tech</label>
+        <input type="radio" name="course" id="course">BCA
+
+        <br>
+        <label for="state">Choose State:</label>
+        <select name="state" id="state" multiple size="1">
+            <option value="statesel">Choose State</option>
+            <option value="Pun" selected>Punjab</option>
+            <option value="ap">Andhra</option>
+        </select>
+
+        <br>
+        <label for="filesel">Choose File:</label>
+        <input type="file" name="filesel" id="filesel" accept="image/*">
+        <input type="submit" name="submitform" id="submitform" value="Submit">
+        <input type="reset" name="resetform" id="resetform" value="Reset Form">
+        <input type="image" name="btnimg" id="btnimg" src="Images/intro.png" width="100" height="100">
+
+
+        <div class="box"><p>Text in .box</p></div>
+<p>Text not in .box</p>
+
+
+
+
+
+
+
+
+
+    </form>
+</body>
+</html>
