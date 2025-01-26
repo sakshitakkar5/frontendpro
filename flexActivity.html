@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Simple Flex Layout</title>
+  <style>
+    /* CSS goes here */
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    /* Container for the layout */
+    .container {
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+
+    /* Header */
+    .header {
+      background-color: #4CAF50;
+      color: white;
+      padding: 1rem;
+      text-align: center;
+    }
+
+    /* Main Content Area */
+    .main {
+      display: flex;
+      flex: 1; /* Fills remaining space */
+    }
+
+    /* Sidebar */
+    .sidebar {
+      background-color: #f4f4f4;
+      padding: 1rem;
+      width: 250px;
+    }
+
+    /* Content */
+    .content {
+      flex: 1;
+      padding: 1rem;
+      background-color: #e9e9e9;
+    }
+
+    /* Footer */
+    .footer {
+      background-color: #333;
+      color: white;
+      text-align: center;
+      padding: 1rem;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <h1>My Webpage</h1>
+    </div>
+    <div class="main">
+      <div class="sidebar">
+        <h2>Sidebar</h2>
+        <p>Links or extra content can go here.</p>
+      </div>
+      <div class="content">
+        <h2>Main Content</h2>
+        <p>This is the main area for the page content.</p>
+      </div>
+    </div>
+    <div class="footer">
+      <p>Footer © 2025</p>
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .container{
+            display: flex;
+            flex-direction: column;
+            min-height: 500px;
+            background-color: lightblue;
+           
+
+            
+        }
+
+        .header{
+
+            background-color: green;
+            color: white;
+            padding: 15px;
+            text-align: center;
+            flex-shrink: 1;
+            
+        }
+
+        .side{
+
+            background-color: peachpuff;
+            width: 20%;
+            padding: 100px;
+            /* flex: 1; */
+            
+
+
+
+        }
+
+        .section{
+            display: flex;
+            flex:1;
+
+        }
+        .main{
+            background-color: lavender;
+            /* width: 80%; */
+            padding: 100px;
+            flex: 1;
+        }
+        .footer{
+
+            background-color: blue;
+            color: white;
+            padding: 15px;
+            text-align: center;
+            flex:1;
+        }
+
+        @media(max-width:300px){
+            .container{
+                flex-wrap: wrap;
+                background-color: yellow;
+            }
+        }
+
+        
+    </style>
+</head>
+<body>
+
+    <div class="container">
+
+        <div class="header">
+            My Webpage
+        </div>
+    
+    <div class="section">
+        <div class="side">
+            <p>Sidebar</p>
+        </div>
+
+        <div class="main">
+            <p>Main Content</p>
+        </div>
+
+    </div>
+
+        <div class="footer">
+            Footer
+        </div>
+    </div>
+    
+</body>
+</html>
